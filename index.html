@@ -49,10 +49,10 @@ target="blank" class="text-primary">Learn More</a>
 function validate(){
 var email=document.getElementById("email").value;
 var pwd=document.getElementById("pwd").value;
-var user=/^[A-Za-z0-9.!@#+""{|}~]+@[A-Za-z0-9]+(?:|.[a-zA-Z0-9]+}*$/;
+var user=/^[A-Za-z0-9.!@#+""{|}~]+@[A-Za-z0-9]+(?:|.[a-zA-Z0-9]+}*$)/;
 var entry=/^[a-zA-Z0-9]{6,}$/;
 if(email.match(user)){
- document.getElementById("email error").innerHTML="";}-
+ document.getElementById("email error").innerHTML="";}
 else{ 
  document.getElementById("email error").innerHTML="Invalid Email";
  return False;}
